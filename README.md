@@ -1,10 +1,10 @@
-# 🔐 Network Intrusion Detection using Machine Learning
+# 🔐 Comparative Network Intrusion Detection using Machine Learning and Deep Learning
 
 ## 📌 Description
 
-Ce projet présente une approche de détection d’intrusion réseau basée sur le machine learning.
+Ce projet présente une approche comparative de détection d’intrusion réseau basée sur des techniques de Machine Learning et de Deep Learning.
 
-L’objectif est d’identifier automatiquement les comportements anormaux ou malveillants dans le trafic réseau à partir de plusieurs modèles d’apprentissage profond.
+L’objectif principal est d’identifier automatiquement les comportements anormaux ou malveillants dans le trafic réseau à travers plusieurs modèles d’apprentissage afin d’évaluer leurs performances respectives.
 
 Ce travail a été réalisé dans le cadre de mon mémoire de fin d’études en sécurité informatique.
 
@@ -12,9 +12,17 @@ Ce travail a été réalisé dans le cadre de mon mémoire de fin d’études en
 
 ## 👤 Auteur
 
-Louis Kodjo ADETI  
+**Louis Kodjo ADETI**  
 Ingénieur en sécurité informatique  
 Togo
+
+---
+
+## 🎓 Formation et certification
+
+- Licence fondamentale en Mathématiques
+- Diplôme d’ingénieur en sécurité informatique
+- Cisco Networking Academy – Introduction to Cybersecurity
 
 ---
 
@@ -22,107 +30,168 @@ Togo
 
 - Détecter les intrusions réseau
 - Classifier différents types d’attaques
-- Comparer plusieurs modèles de Deep Learning
+- Comparer plusieurs modèles d’apprentissage
 - Évaluer les performances des modèles
+- Identifier les approches les plus efficaces pour la détection d’anomalies réseau
 
 ---
 
-## 🧠 Modèles utilisés
+# 🧠 Modèles utilisés
 
-- DNN (Deep Neural Network)
-- CNN (Convolutional Neural Network)
-- LSTM (Long Short-Term Memory)
+## 🔹 Machine Learning
+- K-Nearest Neighbors (KNN)
+- Decision Tree
+- Random Forest
+- Logistic Regression
+- Naive Bayes
+
+## 🔹 Deep Learning
+- Deep Neural Network (DNN)
+- Convolutional Neural Network (CNN)
+- Long Short-Term Memory (LSTM)
 - CNN-LSTM Hybride
 
 ---
 
-## ⚙️ Pipeline du projet
+# ⚙️ Pipeline du projet
 
-1. Collecte et préparation des données
-2. Prétraitement et normalisation
-3. Encodage des labels
-4. Entraînement des modèles
-5. Évaluation des performances
-6. Analyse des résultats
+1. Collecte et préparation des données réseau
+2. Nettoyage des données
+3. Prétraitement et normalisation
+4. Encodage des labels
+5. Séparation des données d’entraînement et de test
+6. Entraînement des modèles ML/DL
+7. Évaluation des performances
+8. Analyse comparative des résultats
 
 ---
 
-## 📂 Structure du projet
+# 📂 Structure du projet
 
 ```text
 network-intrusion-detection-ml/
 │
 ├── notebooks/
+│   ├── preprocessing.ipynb
+│   ├── machine_learning.ipynb
+│   └── deep_learning.ipynb
+│
 ├── models/
+│   ├── machine_learning/
+│   └── deep_learning/
+│
 ├── metrics/
 ├── history/
 ├── predictions/
+│
 ├── results/
+│   ├── confusion_matrices/
+│   ├── reports/
+│   ├── training_curves/
+│   └── comparison/
+│
 └── data/
 ```
 
 ---
 
-## 📊 Résultats
+# 📊 Résultats
 
-### 🔹 Matrices de confusion
+## 🔹 Matrices de confusion
 
-#### DNN
-![DNN Confusion Matrix](results/matrice_confusion_dnn.png)
-
-#### LSTM
-![LSTM Confusion Matrix](results/matrice_confusion_lstm.png)
-
----
-
-## 📈 Courbes d’entraînement
-
-### CNN
-![CNN Training](results/courbes_train_val_test_cnn.png)
+### DNN
+![DNN Confusion Matrix](results/confusion_matrices/matrice_confusion_dnn.png)
 
 ### LSTM
-![LSTM Training](results/courbes_train_val_test_lstm.png)
+![LSTM Confusion Matrix](results/confusion_matrices/matrice_confusion_lstm.png)
+
+### Random Forest
+![Random Forest Confusion Matrix](results/confusion_matrices/RandomForest_confusion.png)
+
+### KNN
+![KNN Confusion Matrix](results/confusion_matrices/KNN_confusion.png)
 
 ---
 
-## 🛠️ Technologies utilisées
+# 📈 Courbes d’entraînement
 
-### Langages et bibliothèques
+### CNN
+![CNN Training](results/training_curves/courbes_train_val_test_cnn.png)
+
+### LSTM
+![LSTM Training](results/training_curves/courbes_train_val_test_lstm.png)
+
+### DNN
+![DNN Accuracy/Loss](results/training_curves/courbes_accuracy_loss_dnn.png)
+
+---
+
+# 📊 Comparaison des modèles
+
+Le projet inclut une analyse comparative des performances des modèles de Machine Learning et de Deep Learning à travers plusieurs métriques :
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+
+### Résumé comparatif
+![Model Comparison](results/comparison/resume_comparatif.png)
+
+---
+
+# 🛠️ Technologies utilisées
+
+## 🔹 Langages et bibliothèques
 - Python
 - NumPy
 - Pandas
-- TensorFlow / Keras
 - Scikit-learn
+- TensorFlow / Keras
 - Matplotlib
 
-### Outils
+## 🔹 Outils
 - Jupyter Notebook
 - Wireshark
 - Git / GitHub
 
 ---
 
-## 📂 Dataset et modèles
+# 🔍 Fonctionnalités principales
 
-Le dataset complet ainsi que les modèles entraînés (.h5) sont disponibles via Google Drive.
-
-🔗 Ajouter ici le lien Google Drive
+- Prétraitement automatisé des données
+- Normalisation des caractéristiques
+- Encodage des labels
+- Entraînement de plusieurs modèles
+- Évaluation comparative
+- Visualisation des performances
+- Analyse des résultats
 
 ---
 
-## 🚀 Perspectives
+# 🚀 Perspectives
 
 - Détection d’intrusion en temps réel
-- Intégration avec SIEM
-- Optimisation des performances
 - Déploiement cloud
+- Intégration SIEM
+- Optimisation des modèles
+- Détection avancée basée sur le Deep Learning
 
 ---
 
-## 🔐 Domaine
+# 🔐 Domaine
 
 - Cybersécurité
 - Sécurité réseau
+- Intrusion Detection Systems (IDS)
 - Machine Learning
 - Deep Learning
-- Intrusion Detection Systems (IDS)
+- Analyse de trafic réseau
+
+---
+
+# 📌 Conclusion
+
+Ce projet met en œuvre plusieurs techniques de Machine Learning et de Deep Learning appliquées à la cybersécurité afin d’évaluer leur capacité à détecter efficacement les intrusions réseau.
+
+Les résultats obtenus montrent l’intérêt des approches intelligentes dans l’amélioration des systèmes de détection d’intrusion modernes.
