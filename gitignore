@@ -1,0 +1,51 @@
+# ============================================================
+#  .gitignore — Network Intrusion Detection ML (CICDDoS2019)
+# ============================================================
+
+# --- Données brutes et prétraitées (volumineuses) ---
+data/
+*.csv
+*.parquet
+*.feather
+
+# --- Environnement Python ---
+venv/
+env/
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# --- Jupyter Notebook ---
+.ipynb_checkpoints/
+
+# --- IDEs ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Logs & cache ---
+logs/
+*.log
+tf_logs/
+*.tfevents.*
+
+# --- Variables d'environnement ---
+.env
+
+# --- Google Drive (Colab) ---
+# Les chemins /content/drive/ sont locaux à Colab, ne pas versionner
+
+# ============================================================
+#  Fichiers INCLUS intentionnellement
+# ============================================================
+# models/best_*.h5
+# models/label_encoder.pkl
+# metrics/*.pkl
+# history/*.pkl
+# predictions/*.npy
+# results/*.png
