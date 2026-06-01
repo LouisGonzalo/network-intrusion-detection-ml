@@ -300,7 +300,7 @@ for name in ['DNN', 'CNN', 'LSTM', 'CNN_LSTM']:
 
 ## 👤 Auteur
 
-**[Ton Nom]**  
+**Louis Kodjo ADETI**  
 🎓 Étudiant / Ingénieur IA & Cybersécurité
 
 - 🔗 [LinkedIn](https://linkedin.com/in/ton-profil)
