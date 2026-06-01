@@ -305,7 +305,7 @@ for name in ['DNN', 'CNN', 'LSTM', 'CNN_LSTM']:
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/louis-adeti-b43018321)
 - 💻 [GitHub](https://github.com/LouisGonzalo)
-- 📧 [mon.louisadeti@gmail.com](mailto:louisadeti@gmail.com)
+- 📧 [louisadeti@gmail.com](mailto:louisadeti18@gmail.com)
 
 ---
 
