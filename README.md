@@ -303,7 +303,7 @@ for name in ['DNN', 'CNN', 'LSTM', 'CNN_LSTM']:
 **Louis Kodjo ADETI**  
 🎓 Étudiant / Ingénieur IA & Cybersécurité
 
-- 🔗 [LinkedIn](https://linkedin.com/in/ton-profil)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/louis-adeti-b43018321)
 - 💻 [GitHub](https://github.com/ton-username)
 - 📧 [ton.email@example.com](mailto:ton.email@example.com)
 
