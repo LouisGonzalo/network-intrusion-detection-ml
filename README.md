@@ -304,8 +304,8 @@ for name in ['DNN', 'CNN', 'LSTM', 'CNN_LSTM']:
 🎓 Étudiant / Ingénieur IA & Cybersécurité
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/louis-adeti-b43018321)
-- 💻 [GitHub](https://github.com/ton-username)
-- 📧 [ton.email@example.com](mailto:ton.email@example.com)
+- 💻 [GitHub](https://github.com/LouisGonzalo)
+- 📧 [ton.email@example.com](mailto:louisadeti@gmail.com)
 
 ---
 
