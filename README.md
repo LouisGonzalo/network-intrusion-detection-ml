@@ -277,7 +277,7 @@ for name in ['DNN', 'CNN', 'LSTM', 'CNN_LSTM']:
 
 ### Matrices de confusion
 
-| DNN | LSTM |
+| DNN | CNN | LSTM | CNN-LSTM |
 |-----|------|
 | ![DNN](Results/DNN_confusion_matrix.png) | ![CNN](Results/CNN_confusion_matrix.png) | ![LSTM](Results/LSTM_confusion_matrix.png) | ![CNN-LSTM](Results/CNN_LSTM_confusion_matrix.png) |
 
