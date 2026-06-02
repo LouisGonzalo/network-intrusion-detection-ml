@@ -301,7 +301,8 @@ for name in ['DNN', 'CNN', 'LSTM', 'CNN_LSTM']:
 ## 👤 Auteur
 
 **Louis Kodjo ADETI**  
-🎓 Étudiant / Ingénieur Cybersécurité & IA
+🎓 Ingénieur en Sécurité Informatique | Network Security | Linux | Administration Système | Détection d'Intrusion Réseau | Ouvert aux Opportunités
+Étudiant / Ingénieur Cybersécurité & IA
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/louis-adeti-b43018321)
 - 💻 [GitHub](https://github.com/LouisGonzalo)
