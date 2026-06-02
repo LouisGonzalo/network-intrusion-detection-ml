@@ -279,7 +279,7 @@ for name in ['DNN', 'CNN', 'LSTM', 'CNN_LSTM']:
 
 | DNN | LSTM |
 |-----|------|
-| ![DNN](Results/matrice_confusion_dnn.png) | ![LSTM](Results/matrice_confusion_lstm.png) |
+| ![DNN](Results/DNN_confusion_matrix.png) | ![CNN](Results/CNN_confusion_matrix.png) | ![LSTM](Results/LSTM_confusion_matrix.png) | ![CNN-LSTM](Results/CNN_LSTM_confusion_matrix.png) |
 
 ---
 
