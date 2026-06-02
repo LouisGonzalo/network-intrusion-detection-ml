@@ -273,7 +273,7 @@ for name in ['DNN', 'CNN', 'LSTM', 'CNN_LSTM']:
 
 | CNN | LSTM | DNN |
 |-----|------|-----|
-| ![CNN](results/courbes_train_val_test_cnn.png) | ![LSTM](results/courbes_train_val_test_lstm.png) | ![DNN](results/courbes_accuracy_loss_dnn.png) |
+| ![DNN](results/dnn_training_curves.png) | ![CNN](results/cnn_training_curves.png) | ![LSTM](results/lstm_training_curves.png) | ![CNN-LSTM](results/cnn_lstm_training_curves.png) |
 
 ### Matrices de confusion
 
