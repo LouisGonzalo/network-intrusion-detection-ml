@@ -271,15 +271,15 @@ for name in ['DNN', 'CNN', 'LSTM', 'CNN_LSTM']:
 
 ### Courbes d'apprentissage
 
-| CNN | LSTM | DNN |
+| CNN | LSTM | DNN | CNN-LSTM |
 |-----|------|-----|
-| ![CNN](results/courbes_train_val_test_cnn.png) | ![LSTM](results/courbes_train_val_test_lstm.png) | ![DNN](results/courbes_accuracy_loss_dnn.png) |
+| ![DNN](Results/dnn_training_curves.png) | ![CNN](Results/cnn_training_curves.png) | ![LSTM](Results/lstm_training_curves.png) | ![CNN-LSTM](Results/cnn_lstm_training_curves.png) |
 
 ### Matrices de confusion
 
-| DNN | LSTM |
+| DNN | CNN | LSTM | CNN-LSTM |
 |-----|------|
-| ![DNN](results/matrice_confusion_dnn.png) | ![LSTM](results/matrice_confusion_lstm.png) |
+| ![DNN](Results/DNN_confusion_matrix.png) | ![CNN](Results/CNN_confusion_matrix.png) | ![LSTM](Results/LSTM_confusion_matrix.png) | ![CNN-LSTM](Results/CNN_LSTM_confusion_matrix.png) |
 
 ---
 
@@ -300,12 +300,12 @@ for name in ['DNN', 'CNN', 'LSTM', 'CNN_LSTM']:
 
 ## 👤 Auteur
 
-**[Ton Nom]**  
-🎓 Étudiant / Ingénieur IA & Cybersécurité
+**Louis Kodjo ADETI**  
+🎓 Ingénieur en Sécurité Informatique | Network Security | Linux | Administration Système | Détection d'Intrusion Réseau | Ouvert aux Opportunités
 
-- 🔗 [LinkedIn](https://linkedin.com/in/ton-profil)
-- 💻 [GitHub](https://github.com/ton-username)
-- 📧 [ton.email@example.com](mailto:ton.email@example.com)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/louis-adeti-b43018321)
+- 💻 [GitHub](https://github.com/LouisGonzalo)
+- 📧 [louisadeti18@gmail.com](mailto:louisadeti18@gmail.com)
 
 ---
 
