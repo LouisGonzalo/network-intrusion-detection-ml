@@ -48,7 +48,8 @@ network-intrusion-detection-ml/
 │   ├── best_cnn_model_7_classes.h5
 │   ├── best_lstm_model_7_classes.h5
 │   ├── best_cnn_lstm_model_7_classes.h5
-│   └── label_encoder.pkl               # Sauvegardé avec joblib
+│   └── label_encoder.pkl        # Sauvegardé avec joblib
+    └── scaler.pkl               
 │
 ├── 📊 metrics/                         # {'accuracy': float, 'loss': float}
 │   ├── DNN_metrics.pkl
