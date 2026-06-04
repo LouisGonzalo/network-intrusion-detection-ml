@@ -43,7 +43,7 @@ network-intrusion-detection-ml/
 │   ├── lstm_model.ipynb                # Long Short-Term Memory
 │   └── cnn_lstm_model.ipynb            # Hybride CNN-LSTM
 │
-├── 🤖 models/
+├── 🤖 Models/
 │   ├── best_dnn_model_7_classes.h5
 │   ├── best_cnn_model_7_classes.h5
 │   ├── best_lstm_model_7_classes.h5
