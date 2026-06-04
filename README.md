@@ -22,37 +22,6 @@ Ce projet implémente un **système de détection d'intrusions réseau (NIDS)** 
 
 ---
 
-```markdown
-## 🏗️ Project Workflow
-
-```mermaid
-flowchart TD
-    A[Raw CICDDoS2019 Data]
-    B[Data Cleaning]
-    C[Feature Selection]
-    D[Standardization]
-    E[SMOTE Balancing]
-    F[DNN]
-    G[CNN]
-    H[LSTM]
-    I[CNN-LSTM]
-    J[Evaluation and Comparison]
-
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-
-    E --> F
-    E --> G
-    E --> H
-    E --> I
-
-    F --> J
-    G --> J
-    H --> J
-    I --> J
-
 ## 🎯 Objectifs
 
 - ✅ Construire un pipeline de prétraitement complet et reproductible
