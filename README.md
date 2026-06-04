@@ -310,6 +310,17 @@ for name in ['DNN', 'CNN', 'LSTM', 'CNN_LSTM']:
 | LSTM | 0.9090 | 0.3918 |
 | CNN-LSTM | 0.9137 | 0.3783 |
 
+### Best Overall Model
+
+The CNN-LSTM architecture achieved the best overall performance,
+obtaining the highest test accuracy (91.37%) and the lowest test
+loss (0.3783).
+
+By combining convolutional layers for local feature extraction and
+LSTM layers for sequential pattern learning, the hybrid model
+demonstrated a slight but consistent improvement over the standalone
+DNN, CNN and LSTM architectures.
+
 ## 👤 Auteur
 
 **Louis Kodjo ADETI**  
