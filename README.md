@@ -69,15 +69,18 @@ network-intrusion-detection-ml/
 │   |   ├── CNN_LSTM_pred.npy
 │   |   └── y_test.npy                      # Labels réels (référence commune)
 |   ├── 🖼️ curves/
-│   |   ├── courbes_accuracy_loss_dnn.png
-│   |   ├── courbes_train_val_test_cnn.png
-│   |   ├── courbes_train_val_test_lstm.png
+│   |   ├── dnn_training_curves.png
+│   |   ├── cnn_training_curves.png
+│   |   ├── lstm_training_curves.png
+|   |   ├── cnn_lstm_training_curves.png
 │   |   ├── DNN_confusion_matrix.png
 │   |   └── LSTM_confusion_matrix.png
 |   |   └── CNN_confusion_matrix.png
 |   |   └── CNN_LSTM_confusion_matrix.png
 ├── 📁 data/                            # ⚠️ Non versionné (voir .gitignore)
-│   ├── X_train.npy                     # Données après SMOTE
+│   ├── dataset_7_classes.csv
+|   ├──test_7_classes.csv
+|   ├── X_train.npy                     # Données après SMOTE
 │   ├── y_train.npy
 │   ├── X_test.npy
 │   ├── y_test.npy
