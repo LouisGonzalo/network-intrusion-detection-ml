@@ -114,7 +114,7 @@ network-intrusion-detection-ml/
 │
 └── 📄 docs/
     ├── rapport_technique.md
-    └── guide_github_debutant.md
+    └── requirements.txt
 ```
 
 ---
