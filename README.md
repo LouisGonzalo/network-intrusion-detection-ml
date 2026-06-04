@@ -79,7 +79,7 @@ network-intrusion-detection-ml/
 |   |   └── CNN_LSTM_confusion_matrix.png
 ├── 📁 data/                            # ⚠️ Non versionné (voir .gitignore)
 │   ├── dataset_7_classes.csv
-|   ├──test_7_classes.csv
+|   ├── test_7_classes.csv
 |   ├── X_train.npy                     # Données après SMOTE
 │   ├── y_train.npy
 │   ├── X_test.npy
