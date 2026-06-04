@@ -36,7 +36,7 @@ Ce projet implémente un **système de détection d'intrusions réseau (NIDS)** 
 ```
 network-intrusion-detection-ml/
 │
-├── 📓 notebooks/
+├── 📓 Notebooks/
 │   ├── preprocessing.ipynb             # Pipeline complet de prétraitement
 │   ├── dnn_model.ipynb                 # Deep Neural Network
 │   ├── cnn_model.ipynb                 # Convolutional Neural Network 1D
