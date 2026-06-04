@@ -122,6 +122,28 @@ CSV brut (CICDDoS2019)
 
 ---
 
+Raw CICDDoS2019 Data
+        │
+        ▼
+ Data Cleaning
+        │
+        ▼
+ Feature Selection
+        │
+        ▼
+ Standardization
+        │
+        ▼
+ SMOTE Balancing
+        │
+        ▼
+ ┌─────────────┬─────────────┬─────────────┬─────────────┐
+ │     DNN     │     CNN     │    LSTM     │  CNN-LSTM   │
+ └─────────────┴─────────────┴─────────────┴─────────────┘
+        │
+        ▼
+ Evaluation & Comparison
+
 ## 📊 Dataset et Classes
 
 | Propriété | Valeur |
