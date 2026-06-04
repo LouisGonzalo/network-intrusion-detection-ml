@@ -301,6 +301,15 @@ for name in ['DNN', 'CNN', 'LSTM', 'CNN_LSTM']:
 
 ---
 
+## 📊 Model Comparison
+
+| Model | Accuracy | Test Loss |
+|---------|---------|---------|
+| DNN | 0.9116 | 0.4139 |
+| CNN | 0.9074 | 0.4168 |
+| LSTM | 0.9090 | 0.3918 |
+| CNN-LSTM | 0.9137 | 0.3783 |
+
 ## 👤 Auteur
 
 **Louis Kodjo ADETI**  
