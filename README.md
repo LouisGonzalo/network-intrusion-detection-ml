@@ -72,8 +72,10 @@ network-intrusion-detection-ml/
 │   |   ├── courbes_accuracy_loss_dnn.png
 │   |   ├── courbes_train_val_test_cnn.png
 │   |   ├── courbes_train_val_test_lstm.png
-│   |   ├── matrice_confusion_dnn.png
-│   |   └── matrice_confusion_lstm.png
+│   |   ├── DNN_confusion_matrix.png
+│   |   └── LSTM_confusion_matrix.png
+|   |   └── CNN_confusion_matrix.png
+|   |   └── CNN_LSTM_confusion_matrix.png
 ├── 📁 data/                            # ⚠️ Non versionné (voir .gitignore)
 │   ├── X_train.npy                     # Données après SMOTE
 │   ├── y_train.npy
