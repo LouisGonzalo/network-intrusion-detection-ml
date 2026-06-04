@@ -51,32 +51,29 @@ network-intrusion-detection-ml/
 │   └── label_encoder.pkl        # Sauvegardé avec joblib
     └── scaler.pkl               
 │
-├── 📊 metrics/                         # {'accuracy': float, 'loss': float}
-│   ├── DNN_metrics.pkl
-│   ├── CNN_metrics.pkl
-│   ├── LSTM_metrics.pkl
-│   └── CNN_LSTM_metrics.pkl
-│
-├── 📈 history/                         # history.history dict complet
-│   ├── DNN_history.pkl
-│   ├── CNN_history.pkl
-│   ├── LSTM_history.pkl
-│   └── CNN_LSTM_history.pkl
-│
-├── 🔮 predictions/
-│   ├── DNN_pred.npy
-│   ├── CNN_pred.npy
-│   ├── LSTM_pred.npy
-│   ├── CNN_LSTM_pred.npy
-│   └── y_test.npy                      # Labels réels (référence commune)
-│
-├── 🖼️ results/
-│   ├── courbes_accuracy_loss_dnn.png
-│   ├── courbes_train_val_test_cnn.png
-│   ├── courbes_train_val_test_lstm.png
-│   ├── matrice_confusion_dnn.png
-│   └── matrice_confusion_lstm.png
-│
+├── 🖼️  Results/
+|   ├──📊 metrics/                         # {'accuracy': float, 'loss': float}
+│   |   ├── DNN_metrics.pkl
+│   |   ├── CNN_metrics.pkl
+│   |   ├── LSTM_metrics.pkl
+│   |   └── CNN_LSTM_metrics.pkl
+│   ├── 📈 history/                       # history.history dict complet                        
+│   |   ├── DNN_history.pkl
+│   |   ├── CNN_history.pkl
+│   |   ├── LSTM_history.pkl
+│   |   └── CNN_LSTM_history.pkl
+|   ├── 🔮 predictions/
+│   |   ├── DNN_pred.npy
+│   |   ├── CNN_pred.npy
+│   |   ├── LSTM_pred.npy
+│   |   ├── CNN_LSTM_pred.npy
+│   |   └── y_test.npy                      # Labels réels (référence commune)
+|   ├── 🖼️ curves/
+│   |   ├── courbes_accuracy_loss_dnn.png
+│   |   ├── courbes_train_val_test_cnn.png
+│   |   ├── courbes_train_val_test_lstm.png
+│   |   ├── matrice_confusion_dnn.png
+│   |   └── matrice_confusion_lstm.png
 ├── 📁 data/                            # ⚠️ Non versionné (voir .gitignore)
 │   ├── X_train.npy                     # Données après SMOTE
 │   ├── y_train.npy
