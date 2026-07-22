@@ -252,7 +252,7 @@ pip install -r requirements.txt
 
 ## 🚀 Utilisation
 
-### Ordre d'exécution recommandé
+### Ordre d'exécution
 
 ```
 1. notebooks/preprocessing.ipynb      → génère les .npy et .pkl

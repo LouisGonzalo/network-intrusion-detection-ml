@@ -3,7 +3,7 @@
 # ============================================================
 
 # --- Données brutes et prétraitées (volumineuses) ---
-data/
+Data/
 *.csv
 *.parquet
 *.feather
