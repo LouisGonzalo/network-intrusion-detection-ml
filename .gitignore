@@ -49,3 +49,7 @@ tf_logs/
 # history/*.pkl
 # predictions/*.npy
 # results/*.png
+
+# --- Données et modèles (non versionnés) ---
+Data/
+Models/
