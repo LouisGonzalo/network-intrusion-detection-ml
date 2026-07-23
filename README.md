@@ -210,7 +210,7 @@ Entraînement : 30 epochs max, batch=64
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/LouisGonzalo/network-intrusion-detection-ml.git
+git clone https://github.com/LouisADETI/network-intrusion-detection-ml.git
 cd network-intrusion-detection-ml
 
 python -m venv venv
