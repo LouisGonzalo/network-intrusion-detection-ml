@@ -53,3 +53,8 @@ tf_logs/
 # --- Données et modèles (non versionnés) ---
 Data/
 Models/
+
+# --- Artefacts intermédiaires (non versionnés) ---
+Results/history/
+Results/metrics/
+Results/predictions/
