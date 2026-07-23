@@ -331,7 +331,7 @@ DNN, CNN and LSTM architectures.
 🎓 Ingénieur en Sécurité Informatique | Network Security | Linux | Administration Système | Détection d'Intrusion Réseau | Ouvert aux Opportunités
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/louis-adeti-b43018321)
-- 💻 [GitHub](https://github.com/LouisGonzalo)
+- 💻 [GitHub](https://github.com/LouisADETI)
 - 📧 [louisadeti18@gmail.com](mailto:louisadeti18@gmail.com)
 
 ---
