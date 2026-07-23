@@ -24,7 +24,7 @@ Ce projet implémente un **système de détection d'intrusions réseau (NIDS)** 
 
 ## 🏗️ Project Workflow
 
-text
+```text
 Raw CICDDoS2019 Data
         │
         ▼
@@ -46,6 +46,7 @@ Raw CICDDoS2019 Data
         │
         ▼
  Evaluation & Comparison
+```
 
 ## 🎯 Objectifs
 
@@ -68,54 +69,25 @@ network-intrusion-detection-ml/
 │   ├── lstm_model.ipynb                # Long Short-Term Memory
 │   └── cnn_lstm_model.ipynb            # Hybride CNN-LSTM
 │
-├── 🤖 Models/
-│   ├── best_dnn_model_7_classes.h5
-│   ├── best_cnn_model_7_classes.h5
-│   ├── best_lstm_model_7_classes.h5
-│   ├── best_cnn_lstm_model_7_classes.h5
-│   └── label_encoder.pkl        # Sauvegardé avec joblib
-    └── scaler.pkl               
+├── 🖼️ Results/
+│   └── figures/
+│       ├── dnn_training_curves.png
+│       ├── cnn_training_curves.png
+│       ├── lstm_training_curves.png
+│       ├── cnn_lstm_training_curves.png
+│       ├── DNN_confusion_matrix.png
+│       ├── CNN_confusion_matrix.png
+│       ├── LSTM_confusion_matrix.png
+│       └── CNN_LSTM_confusion_matrix.png
 │
-├── 🖼️  Results/
-|   ├──📊 metrics/                         # {'accuracy': float, 'loss': float}
-│   |   ├── DNN_metrics.pkl
-│   |   ├── CNN_metrics.pkl
-│   |   ├── LSTM_metrics.pkl
-│   |   └── CNN_LSTM_metrics.pkl
-│   ├── 📈 history/                       # history.history dict complet                        
-│   |   ├── DNN_history.pkl
-│   |   ├── CNN_history.pkl
-│   |   ├── LSTM_history.pkl
-│   |   └── CNN_LSTM_history.pkl
-|   ├── 🔮 predictions/
-│   |   ├── DNN_pred.npy
-│   |   ├── CNN_pred.npy
-│   |   ├── LSTM_pred.npy
-│   |   ├── CNN_LSTM_pred.npy
-│   |   └── y_test.npy                      # Labels réels (référence commune)
-|   ├── 🖼️ curves/
-│   |   ├── dnn_training_curves.png
-│   |   ├── cnn_training_curves.png
-│   |   ├── lstm_training_curves.png
-|   |   ├── cnn_lstm_training_curves.png
-│   |   ├── DNN_confusion_matrix.png
-│   |   └── LSTM_confusion_matrix.png
-|   |   └── CNN_confusion_matrix.png
-|   |   └── CNN_LSTM_confusion_matrix.png
-├── 📁 data/                            # ⚠️ Non versionné (voir .gitignore)
-│   ├── dataset_7_classes.csv
-|   ├── test_7_classes.csv
-|   ├── X_train.npy                     # Données après SMOTE
-│   ├── y_train.npy
-│   ├── X_test.npy
-│   ├── y_test.npy
-│   ├── scaler.pkl                      # StandardScaler sauvegardé
-│   └── label_encoder.pkl
-│
-└── 📄 docs/
-    ├── rapport_technique.md
-    └── requirements.txt
+├── 📄 rapport_technique.md
+├── 📄 requirements.txt
+├── 📄 LICENSE
+├── 📄 .gitignore
+└── 📄 README.md
 ```
+
+> **Note :** les dossiers `Data/`, `Models/`, `Results/history/`, `Results/metrics/` et `Results/predictions/` ne sont **pas versionnés** (voir `.gitignore`). Ils sont générés localement en exécutant les notebooks — voir la section [Utilisation](#-utilisation) ci-dessous.
 
 ---
 
@@ -139,8 +111,8 @@ CSV brut (CICDDoS2019)
     ├─ 11. StandardScaler → fit sur train, transform sur test
     ├─ 12. SMOTE sur X_train uniquement (éviter data leakage)
     │
-    └─ Sauvegarde : X_train.npy, y_train.npy, X_test.npy, y_test.npy,
-                    scaler.pkl, label_encoder.pkl
+    └─ Sauvegarde locale : X_train.npy, y_train.npy, X_test.npy, y_test.npy,
+                           scaler.pkl, label_encoder.pkl (dans Data/, non versionné)
 ```
 
 > **Input shape final :** `(n_samples, 27)` — 27 features après nettoyage
@@ -182,7 +154,7 @@ Input(27)
   Dense(32,  relu) + Dropout(0.2)
   Dense(7, softmax)
 ```
-Callbacks : `EarlyStopping(patience=7)` + `ModelCheckpoint` + `ReduceLROnPlateau(factor=0.5, patience=3)`  
+Callbacks : `EarlyStopping(patience=7)` + `ModelCheckpoint` + `ReduceLROnPlateau(factor=0.5, patience=3)`
 Entraînement : 20 epochs max, batch=128
 
 ---
@@ -199,7 +171,7 @@ Input(27, 1)
   Dense(64, relu) + Dropout(0.2)
   Dense(7, softmax)
 ```
-Callbacks : `EarlyStopping(patience=5)` + `ModelCheckpoint`  
+Callbacks : `EarlyStopping(patience=5)` + `ModelCheckpoint`
 Entraînement : 30 epochs max, batch=64
 
 ---
@@ -213,7 +185,7 @@ Input(27, 1)
   Dense(32, relu)
   Dense(7, softmax)
 ```
-Callbacks : `EarlyStopping(patience=5)` + `ModelCheckpoint`  
+Callbacks : `EarlyStopping(patience=5)` + `ModelCheckpoint`
 Entraînement : 20 epochs max, batch=64
 
 ---
@@ -230,7 +202,7 @@ Input(27, 1)
   Dense(32, relu)
   Dense(7, softmax)
 ```
-Callbacks : `EarlyStopping(patience=5)` + `ModelCheckpoint`  
+Callbacks : `EarlyStopping(patience=5)` + `ModelCheckpoint`
 Entraînement : 30 epochs max, batch=64
 
 ---
@@ -238,7 +210,7 @@ Entraînement : 30 epochs max, batch=64
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/<TON_USERNAME>/network-intrusion-detection-ml.git
+git clone https://github.com/LouisGonzalo/network-intrusion-detection-ml.git
 cd network-intrusion-detection-ml
 
 python -m venv venv
@@ -252,29 +224,36 @@ pip install -r requirements.txt
 
 ## 🚀 Utilisation
 
-### Ordre d'exécution
+Les dossiers `Data/`, `Models/`, `Results/history/`, `Results/metrics/` et `Results/predictions/` ne sont pas inclus dans le dépôt. Pour les régénérer :
+
+### 1. Télécharger le dataset
+
+Télécharger CICDDoS2019 depuis https://www.unb.ca/cic/datasets/ddos-2019.html et placer les fichiers CSV bruts dans un dossier `Data/` à la racine du projet.
+
+### 2. Exécuter les notebooks dans l'ordre
 
 ```
-1. notebooks/preprocessing.ipynb      → génère les .npy et .pkl
-2. notebooks/dnn_model.ipynb
-3. notebooks/cnn_model.ipynb
-4. notebooks/lstm_model.ipynb
-5. notebooks/cnn_lstm_model.ipynb
+1. Notebooks/preprocessing.ipynb      → génère Data/*.npy et Data/*.pkl
+2. Notebooks/dnn_model.ipynb          → génère Models/best_dnn_model_7_classes.h5,
+                                         Results/history/, Results/metrics/, Results/predictions/
+3. Notebooks/cnn_model.ipynb
+4. Notebooks/lstm_model.ipynb
+5. Notebooks/cnn_lstm_model.ipynb
 ```
 
-### Inférence sur un modèle sauvegardé
+### Inférence sur un modèle entraîné
 
 ```python
 import numpy as np
 import joblib
 from tensorflow.keras.models import load_model
 
-# Charger le modèle souhaité
-model = load_model('models/best_cnn_lstm_model_7_classes.h5')
-label_encoder = joblib.load('models/label_encoder.pkl')
+# Charger le modèle souhaité (après avoir exécuté les notebooks)
+model = load_model('Models/best_cnn_lstm_model_7_classes.h5')
+label_encoder = joblib.load('Models/label_encoder.pkl')
 
 # Charger et reshaper les données de test
-X_test = np.load('data/X_test.npy')
+X_test = np.load('Data/X_test.npy')
 X_test_reshaped = X_test.reshape((X_test.shape[0], X_test.shape[1], 1))
 
 # Prédiction
@@ -288,7 +267,7 @@ print(label_encoder.inverse_transform(y_pred[:10]))
 import pickle
 
 for name in ['DNN', 'CNN', 'LSTM', 'CNN_LSTM']:
-    with open(f'metrics/{name}_metrics.pkl', 'rb') as f:
+    with open(f'Results/metrics/{name}_metrics.pkl', 'rb') as f:
         m = pickle.load(f)
     print(f"{name:10s} | Accuracy: {m['accuracy']:.4f} | Loss: {m['loss']:.4f}")
 ```
@@ -299,14 +278,14 @@ for name in ['DNN', 'CNN', 'LSTM', 'CNN_LSTM']:
 
 ### Courbes d'apprentissage
 
-| CNN | LSTM | DNN | CNN-LSTM |
-|-----|------|-----|
+| DNN | CNN | LSTM | CNN-LSTM |
+|-----|-----|------|----------|
 | ![DNN](Results/figures/dnn_training_curves.png) | ![CNN](Results/figures/cnn_training_curves.png) | ![LSTM](Results/figures/lstm_training_curves.png) | ![CNN-LSTM](Results/figures/cnn_lstm_training_curves.png) |
 
 ### Matrices de confusion
 
 | DNN | CNN | LSTM | CNN-LSTM |
-|-----|------|
+|-----|-----|------|----------|
 | ![DNN](Results/figures/DNN_confusion_matrix.png) | ![CNN](Results/figures/CNN_confusion_matrix.png) | ![LSTM](Results/figures/LSTM_confusion_matrix.png) | ![CNN-LSTM](Results/figures/CNN_LSTM_confusion_matrix.png) |
 
 ---
@@ -348,7 +327,7 @@ DNN, CNN and LSTM architectures.
 
 ## 👤 Auteur
 
-**Louis Kodjo ADETI**  
+**Louis Kodjo ADETI**
 🎓 Ingénieur en Sécurité Informatique | Network Security | Linux | Administration Système | Détection d'Intrusion Réseau | Ouvert aux Opportunités
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/louis-adeti-b43018321)
